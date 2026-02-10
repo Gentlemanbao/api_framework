@@ -1,0 +1,6 @@
+- name: "删除用户"
+  method: POST
+  url: "/api/user/delete"
+  expected:
+    status_code: 200
+    errMsg: ok

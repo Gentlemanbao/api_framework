@@ -1,0 +1,6 @@
+- name: "删除合同创建指令-删除合同"
+  method: GET
+  url: "/flowApi/instruction/contract/delete"
+  expected:
+    status_code: 200
+    success: true

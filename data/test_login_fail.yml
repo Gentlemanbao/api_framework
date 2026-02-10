@@ -1,0 +1,4 @@
+- ["错误用户名，正确密码","af","af5fb18512832d334578b162669621d08926a3ddc00bf841657743930375fd471",200,
+  '{"errCode":-1,"errMsg":"UsernameNotFoundException: 用户不存在!","data":null,"retMsg":"UsernameNotFoundException: 用户不存在!","retCode":-1}']
+- ["正确用户名，错误密码","ceshizb","1232",200,
+  '{"errCode":-1,"errMsg":"UsernameNotFoundException: 用户密码不正确","data":null,"retMsg":"UsernameNotFoundException: 用户密码不正确","retCode":-1}']

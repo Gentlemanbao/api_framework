@@ -1,0 +1,6 @@
+- name: "导出销售开票报表"
+  url: "/fileApi/ceph/download"
+  request:
+    directoryName: "ceshizb"
+    fileName: "销售开票报表导出2026-02-06 15:37:50.xlsx"
+    identification: "reportdownload"

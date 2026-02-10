@@ -1,0 +1,6 @@
+- name: "重点非交易客户批量导入"
+  method: POST
+  url: "/bizApi/customer/keyNonTradingCustomer/importFile"
+  expected:
+    status_code: 200
+    retMsg: "第[2]行数据校验失败: 是否为海外客户必须填写'是'或'否'"

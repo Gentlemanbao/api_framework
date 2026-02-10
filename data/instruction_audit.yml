@@ -1,0 +1,16 @@
+- name: "获取合同创建指令"
+  method: POST
+  url: "/flowApi/instruction/ht-cj/audit"
+  request:
+    logicContractCode: 20260210-BDFZ-SINSB002
+    contractCode: 20260210-BDFZ-SINSB002-01
+    leftBranch: 0
+    deliveryContract: 0
+    isRecording: 1
+    departmentLeaderUserAccount: zhangjingjing
+    simpleAudit: false
+    draftState: true
+    modifyMarginClauseFlag: 0
+  expected:
+    status_code: 200
+    retMsg: ok

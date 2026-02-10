@@ -1,0 +1,7 @@
+- name: "获取合同详情"
+  method: POST
+  url: "/contractApi/contract/getByContractCode"
+  expected:
+    status_code: 200
+    errMsg: ok
+    logicContractCode: 20260202-BDFZ-SFNSB001

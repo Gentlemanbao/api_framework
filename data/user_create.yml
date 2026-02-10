@@ -1,0 +1,7 @@
+- name: "新增用户"
+  method: POST
+  url: "/api/user/create"
+  request: {"userAccount":"test","status":1,"password":"af5fb18512832d334578b162669621d08926a3ddc00bf841657743930375fd47","gender":1,"email":"1228@qq.com","customerId":1,"departmentId":1}
+  expected:
+    status_code: 200
+    errMsg: ok

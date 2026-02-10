@@ -1,0 +1,10 @@
+- name: "正确账号密码登录"
+  method: POST
+  url: "/api/user/login"
+  request:
+    username: "ceshizb"
+    password: "af5fb18512832d334578b162669621d08926a3ddc00bf841657743930375fd47"
+    source: 1
+  expected:
+    status_code: 200
+    retMsg: ok

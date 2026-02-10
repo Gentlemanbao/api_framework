@@ -1,0 +1,8 @@
+- name: "合同详情接口"
+  method: GET
+  url: "/contractApi/bookkeeping/detail"
+  params:
+    id:
+  expected:
+    status_code: 200
+    retMsg: ok
