@@ -9,6 +9,7 @@ import allure
 
 from api.customer_api.customer_business_api import BaseCustomerImportApi
 from libs.get_api_data import load_test_data
+from libs.response_assertions import ApiResponseAssertions
 from paths_manger import customer_import_xlsx
 
 

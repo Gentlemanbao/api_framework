@@ -21,5 +21,14 @@ class BaseCustomerImportApi(RequestsClient):
         }
         self.method = load_test_data("customer_import.yml")[0]["method"]
         self.url = get_env_data() + load_test_data("customer_import.yml")[0]["url"]
-        self.files = {"file": (file_name,open(filepath, "rb").read(), "multipart/form-data")}
-        logger.info(f"文件流：{self.files}")
+        try:
+            with open(filepath, "rb") as f:
+                file_content = f.read()
+            self.files = {"file": (file_name, file_content, "multipart/form-data")}
+            logger.info(f"文件加载成功：{file_name}")
+        except FileNotFoundError:
+            logger.error(f"文件未找到：{filepath}")
+            raise
+        except Exception as e:
+            logger.error(f"文件读取失败：{str(e)}")
+            raise

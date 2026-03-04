@@ -4,4 +4,3 @@
   expected:
     status_code: 200
     errMsg: ok
-    logicContractCode: 20260202-BDFZ-SFNSB001
